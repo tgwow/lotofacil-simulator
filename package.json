@@ -2,7 +2,7 @@
     "name": "lotofacil-simulator",
     "version": "1.0.0",
     "description": "Place your Lotofácil bets on the web.",
-    "main": "script.js",
+    "main": "src/js/script.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
