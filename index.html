@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html lang="pt" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lotofácil Simulator 2.0</title>
+</head>
+<style>
+
+    *,
+    ::after,
+    ::before {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        outline: none;
+        border: none;
+    }
+    :root {
+        --color-primary: #930989;
+        --color-secondary: #475659;
+
+        --color-gray-light: #cccccc5c;
+
+        --color-black: #000;
+        --color-white: #fff;
+    }
+
+    body {
+        display: flex;
+        background-color: var(--color-secondary);
+        align-items: center;
+        justify-content: center;
+        /*flex-direction: column;*/
+        width: 100%;
+        height: 100vh;
+        color: white;
+        font-family: Arial;
+    }
+
+    h1 {
+        margin-bottom: 30px;
+    }
+    .loto {
+        max-width: 300px;
+        width: 400px;
+        border-radius: 3px;
+        box-shadow: 0px .5px 4px rgba(0, 0, 0, 0.30);
+    }
+
+    .loto__row {
+        font-size: 0px;
+    }
+
+</style>
+<body>
+    <main class="game">
+        <header class="game__header">
+            <h1 class="heading-primary">Preencha sua aposta</h1>
+            <p class="paragraph">
+                Escolha de 15 a 18 números para apostas. Você ganha acertando 11, 12, 13, 14 ou 15 números.<br />
+                São Muitas chances de perder, e agora você joga de onde estiver!
+            </p>
+        </header>
+<!--        <span class="loto__counter">Números selecionados: 0</span>-->
+        <section class="game__bet">
+        </section>
+        <footer class="game__control">
+            <button data-js="button-complete" class="btn">Completar o jogo</button>
+            <button data-js="button-clear" class="btn">Limpar o volante</button>
+            <button data-js="button-save" class="btn btn--green">Salvar</button>
+        </footer>
+    </main>
+
+    <aside class="bet">
+        <h2 class="heading-primary">Apostas Feitas</h2>
+        <ul class="bet__list">
+            <li class="bet__list__item">
+                <span class="bet__number">#1</span>
+                01,02 , 03, 04, 05, 01,02 , 03, 04, 05, 01,02 , 03, 04, 05, 01,02 , 03, 04, 05
+                <span class="bet__close">&times;</span>
+            </li>
+            <li class="bet__list__item">
+                <span class="bet__number">#1</span>
+                01,02 , 03, 04, 05, 01,02 , 03, 04, 05, 01,02 , 03, 04, 05, 01,02 , 03, 04, 05
+                <span class="bet__close">&times;</span>
+            </li>
+        </ul>
+        <div class="result" >
+            <div class="result__champion">
+                <h2>Sorteio</h2>
+                <input type="text" placeholder="Resultado sorteado"/>
+                <button>Ok</button>
+            </div>
+            <p class="result__bets">
+                O jogo #1 teve 4 acertos
+            </p>
+            <p class="result__bets">
+                O jogo #1 teve 4 acertos
+            </p>
+        </div>
+    </aside>
+<script type="module" src="script.js"></script>
+</body>
+</html>

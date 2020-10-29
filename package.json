@@ -1,0 +1,18 @@
+{
+    "name": "lotofacil-simulator",
+    "version": "1.0.0",
+    "description": "Place your Lotofácil bets on the web.",
+    "main": "script.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "lotofacil"
+    ],
+    "author": "tgwow",
+    "license": "ISC",
+    "repository": "https://github.com/tgwow/lotofacil-simulator",
+    "devDependencies": {
+        "node-sass": "^4.14.1"
+    }
+}
