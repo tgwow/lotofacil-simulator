@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+p {
+  color: #8b8b8b; }
+
+button {
+  outline: none; }
+
+body {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #717171; }
+
+.heading-primary {
+  margin-bottom: 1.5rem;
+  line-height: 1; }
+
+.paragraph {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: #8b8b8b; }
+
+.btn {
+  width: 190px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  color: #fff;
+  background-color: #2F6EB7;
+  font-size: 1.8rem;
+  font-weight: 700; }
+  .btn:not(:last-child) {
+    margin-right: 1.5rem; }
+  .btn:hover {
+    background-color: #25568e;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+  .btn--green {
+    background-color: #73B72F; }
+    .btn--green:hover {
+      background-color: #5a8e25;
+      box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.btn-number {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #D6D6D6;
+  color: #717171;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  transition: all .2s; }
+  .btn-number:hover {
+    background-color: #bdbdbd;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.15); }
+
+.btn-number.active {
+  color: #fff;
+  background-color: #9728C9; }
+
+.game {
+  width: 715px;
+  flex: 0 1 auto; }
+  .game__bet {
+    margin: 3rem 0; }
+    .game__bet__row > button:not(:last-child) {
+      margin-right: 2rem;
+      margin-bottom: 2rem; }
+
+.bet {
+  flex: 1 1 250px; }
+  .bet__list {
+    list-style: none; }
+    .bet__list__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0;
+      font-weight: 700;
+      font-size: 2.2rem; }
+      .bet__list__item:not(:last-child) {
+        border-bottom: 1px solid #eee; }
+      .bet__list__item__game {
+        font-size: 2.2rem;
+        margin-right: 2.5rem; }
+      .bet__list__item__numbers {
+        margin-right: 2.5rem;
+        word-break: break-word; }
+  .bet__close {
+    color: #D02F2F;
+    font-size: 2.4rem;
+    cursor: pointer;
+    font-weight: 300; }
+  .bet__result {
+    border-radius: 6px;
+    box-shadow: 0px 2px 4.5px rgba(0, 0, 0, 0.15); }
+    .bet__result__games {
+      padding: 2rem 2.5rem; }
+    .bet__result__game {
+      line-height: 2; }
+
+.champion {
+  border-bottom: 1px solid #eee;
+  padding: 3rem 2.5rem; }
+  .champion__input {
+    border: 1px solid #eee;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    color: #717171;
+    width: 80%;
+    margin-right: .5rem; }
+    .champion__input:focus {
+      outline: none;
+      box-shadow: 0px 1px 2.5px rgba(0, 0, 0, 0.15); }
+
+.btn-champion {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #8FD53F;
+  transition: all .2s; }
+  .btn-champion:hover {
+    background-color: #75b928;
+    box-shadow: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.15); }

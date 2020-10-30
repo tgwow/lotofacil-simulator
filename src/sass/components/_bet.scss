@@ -1,0 +1,80 @@
+.bet {
+  flex: 1 1 250px;
+
+  &__list {
+    list-style: none;
+
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 0;
+      font-weight: 700;
+      font-size: 2.2rem;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid #eee;
+      }
+
+      &__game {
+        font-size: 2.2rem;
+        margin-right: 2.5rem;
+
+      }
+      &__numbers {
+        margin-right: 2.5rem;
+        word-break: break-word;
+      }
+    }
+  }
+
+  &__close {
+    color: $color-red;
+    font-size: 2.4rem;
+    cursor: pointer;
+    font-weight: 300;
+  }
+
+  &__result {
+    border-radius: 6px;
+    box-shadow: 0px 2px 4.5px rgba($color-black, 0.15);
+
+    &__games {
+      padding: 2rem 2.5rem;
+    }
+    &__game {
+      line-height: 2;
+    }
+  }
+}
+.champion {
+  border-bottom: 1px solid #eee;
+  padding: 3rem 2.5rem;
+
+  &__input {
+    border: 1px solid #eee;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    color: $color-gray-1;
+    width: 80%;
+    margin-right: .5rem;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0px 1px 2.5px rgba($color-black, 0.15);
+    }
+  }
+}
+
+.btn-champion {
+  padding: 1rem 1.5rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: $color-white;
+  border-radius: 5px;
+  background-color: $color-green;
+  transition: all .2s;
+
+  @include btn-hover($color-green);
+}

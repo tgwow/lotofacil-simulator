@@ -1,0 +1,21 @@
+.game {
+  width: 715px;
+  flex: 0 1 auto;
+
+  &__header {
+
+  }
+
+  &__bet {
+    margin: 3rem 0;
+
+    &__row > button:not(:last-child) {
+      margin-right: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__control {
+
+  }
+}
