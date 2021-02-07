@@ -1,0 +1,6 @@
+@mixin btn-hover($color) {
+  &:hover {
+    background-color: darken($color, 10%);
+    box-shadow: 0rem .5rem 1rem rgba($color-black, 0.15);
+  }
+}

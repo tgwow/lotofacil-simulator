@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Strict//EN">
+<html lang="pt" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lotofácil Simulator 2.0</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/styles.css"/>
+</head>
+
+<body>
+    <main class="game">
+        <header class="game__header">
+            <h2 class="heading-primary">Preencha sua aposta</h2>
+            <p class="paragraph">
+                Escolha de 15 a 18 números para apostas. Você ganha acertando 11, 12, 13, 14 ou 15 números.<br />
+                São Muitas chances de perder, e agora você joga de onde estiver!
+            </p>
+        </header>
+        <section class="game__bet" data-js="game-board">
+        </section>
+        <footer class="game__control">
+            <button data-js="button-complete" class="btn">Completar o jogo</button>
+            <button data-js="button-clear" class="btn">Limpar o volante</button>
+            <button data-js="button-save" class="btn btn--green">Salvar</button>
+        </footer>
+    </main>
+
+    <aside class="bet">
+        <h2 class="heading-primary">Apostas Feitas</h2>
+        <ul class="bet__list" data-js="bet-list"></ul>
+        <div class="bet__result">
+            <div class="champion">
+                <h2 class="heading-primary">Sorteio</h2>
+                <input class="champion__input" data-js="input-champion" type="text" placeholder="Resultado sorteado. Ex: 1,2,3,4"/>
+                <button class="btn-champion" data-js="btn-champion">Ok</button>
+            </div>
+            <div class="bet__result__games" data-js="hits-list">Faça uma aposta e veja o resultado</div>
+        </div>
+    </aside>
+<script type="module" src="src/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+.btn {
+  width: 190px;
+  border: none;
+  cursor: pointer;
+  transition: all .2s;
+  border-radius: 8px;
+  padding: 1.5rem 1rem;
+  color: $color-white;
+  background-color: $color-secondary;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  @include btn-hover($color-secondary);
+
+  &--green {
+    background-color: $color-tertiary;
+
+    @include btn-hover($color-tertiary);
+  }
+}

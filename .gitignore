@@ -1,4 +1,4 @@
-./node_modules/**
+node_modules
 
 # WebStorm config folder
-./idea/**
+.idea
